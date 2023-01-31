@@ -1,4 +1,4 @@
-  name: Build and push python code to gcp with github action
+  name: Build and push python code to gcp with github actions.
 on:
   push:
     branches: [main]
@@ -23,7 +23,8 @@ jobs:
     run: docker build -t $IMAGE_NAME:latest .
 
   - name: Configure Docker Client
-    run: gcloud auth configure-docker --quiet
+    run: |-
+      gcloud auth configure-docker --quiet
 
   - name: Push Docker Image to Container Registry (GCR)
     env:
