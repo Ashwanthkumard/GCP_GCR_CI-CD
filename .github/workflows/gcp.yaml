@@ -1,5 +1,8 @@
 name: Build and push python code to gcp with github actions.
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   build_push_grc:
     name: Build and push to gcr
