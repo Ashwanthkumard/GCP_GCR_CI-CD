@@ -1,4 +1,4 @@
-name: Build and push python code to gcp with github actions
+name: Build and push python code to gcp with github actions.
 on:
   push:
     branches: [main]
