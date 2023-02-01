@@ -1,5 +1,5 @@
 ---
-name: Build and push python code to gcp with github action's support
+name: Build and push python code to gcp with github actions
 on:
   push:
     branches:
