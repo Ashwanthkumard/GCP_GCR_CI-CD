@@ -1,5 +1,5 @@
 ---
-name: Build and push python code to gcp with github action's
+name: Build and push python code to gcp with github action's.
 on:
   push:
     branches:
@@ -21,7 +21,7 @@ jobs:
           export_default_credentials: true
 
       - name: Build Docker Image
-        run: docker build -t $IMAGE_NAME:latest .
+        run: docker build -t $IMAGE_NAME .
 
       - name: Configure Docker Client
         run: |-
